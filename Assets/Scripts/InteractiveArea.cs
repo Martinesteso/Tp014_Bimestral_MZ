@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InteractiveArea : MonoBehaviour
 {
+    public int contadorRecolectados = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,15 @@ public class InteractiveArea : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnTriggerEnter(Collider col)
+    {
+        if (col.CompareTag("Coleccionable"))
+        {
+            contadorRecolectados++;
+            Destroy(col.gameObject);
+            Debug.Log("Objetos recolectados: " + contadorRecolectados);
+        }
     }
 }
