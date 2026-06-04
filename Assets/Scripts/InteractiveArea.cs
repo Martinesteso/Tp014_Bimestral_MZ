@@ -5,26 +5,22 @@ using UnityEngine;
 public class InteractiveArea : MonoBehaviour
 {
     public int contadorRecolectados = 0;
-    
+    UIMANAGER uiManagerScript;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        uiManagerScript = GameObject.FindObjectOfType<UIMANAGER>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnTriggerEnter(Collider col)
     {
         if (col.CompareTag("Coleccionable"))
         {
-            contadorRecolectados++;
             Destroy(col.gameObject);
-            Debug.Log("Objetos recolectados: " + contadorRecolectados);
+            contadorRecolectados = contadorRecolectados + 1;
+            uiManagerScript.UpdateScore(contadorRecolectados);
         }
     }
 }

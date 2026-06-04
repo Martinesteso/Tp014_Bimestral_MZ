@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static float timer = 60f;
-    
+    UIMANAGER uiManagerScript;
+    public static float tiempoTranscurrido = 60f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        uiManagerScript = GameObject.FindObjectOfType<UIMANAGER>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-
-        if (timer < 0){
-            timer = 0;
-        }
+        tiempoTranscurrido -= Time.deltaTime;
     }
 }

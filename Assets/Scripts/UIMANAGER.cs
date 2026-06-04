@@ -7,21 +7,24 @@ public class UIMANAGER : MonoBehaviour
 {
     public TextMeshProUGUI Txt_puntaje;
     public TextMeshProUGUI Txt_tiempo;
-    public GameManager GameMgr;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateTimer();
     }
 
-    public void UpdateTimer(){
-        updateTimer.text = GameMgr.timer;
+    public void UpdateTimer()
+    {
+        if (GameManager.tiempoTranscurrido < 0)
+        {
+            GameManager.tiempoTranscurrido = 0;
+        }
+        Txt_tiempo.text = "Tiempo: " + GameManager.tiempoTranscurrido;
+    }
+
+    public void UpdateScore(int puntos)
+    {
+        Txt_puntaje.text = "Puntaje: " + puntos;
     }
 }
