@@ -20,7 +20,7 @@ public class UIMANAGER : MonoBehaviour
         {
             GameManager.tiempoTranscurrido = 0;
         }
-        Txt_tiempo.text = "Tiempo: " + GameManager.tiempoTranscurrido;
+        Txt_tiempo.text = "TIEMPO: " + (GameManager.tiempoTranscurrido).ToString("F2");
     }
 
     public void UpdateScore(int puntos)
