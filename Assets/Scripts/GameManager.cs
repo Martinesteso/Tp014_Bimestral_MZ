@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         uiManagerScript = GameObject.FindObjectOfType<UIMANAGER>();
     }
 
@@ -17,5 +19,17 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         tiempoTranscurrido -= Time.deltaTime;
+
+        if (tiempoTranscurrido <= 0)
+        {
+            tiempoTranscurrido = 0;
+            uiManagerScript.MostrarPanelGameOver();
+            Time.timeScale = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

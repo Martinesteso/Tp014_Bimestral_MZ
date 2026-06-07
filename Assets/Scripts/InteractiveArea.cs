@@ -22,5 +22,11 @@ public class InteractiveArea : MonoBehaviour
             contadorRecolectados = contadorRecolectados + 1;
             uiManagerScript.UpdateScore(contadorRecolectados);
         }
+
+        if (contadorRecolectados >= 5)
+        {
+            uiManagerScript.MostrarPanelWin();
+            Time.timeScale = 0;
+        }
     }
 }
