@@ -6,17 +6,28 @@ ModelImporter:
     100000: Cube
     100002: Cube.001
     100004: //RootNode
+    100006: Mesa.inf
+    100008: Mesa.sup
     400000: Cube
     400002: Cube.001
     400004: //RootNode
+    400006: Mesa.inf
+    400008: Mesa.sup
     2100000: Material.001
     2100002: No Name
+    2100004: Material.002
     2300000: Cube
     2300002: Cube.001
+    2300004: Mesa.inf
+    2300006: Mesa.sup
     3300000: Cube
     3300002: Cube.001
+    3300004: Mesa.inf
+    3300006: Mesa.sup
     4300000: Cube
     4300002: Cube.001
+    4300004: Mesa.sup
+    4300006: Mesa.inf
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
