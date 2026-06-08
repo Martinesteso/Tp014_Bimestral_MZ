@@ -9,6 +9,7 @@ public class UIMANAGER : MonoBehaviour
     public TextMeshProUGUI txt_tiempo;
     public GameObject panelWin;
     public GameObject panelGameOver;
+    public GameManager GameMGR;
 
     // Update is called once per frame
     void Update()
@@ -18,11 +19,11 @@ public class UIMANAGER : MonoBehaviour
 
     public void UpdateTimer()
     {
-        if (GameManager.tiempoTranscurrido < 0)
+        if (GameMGR.tiempoTranscurrido < 0)
         {
-            GameManager.tiempoTranscurrido = 0;
+            GameMGR.tiempoTranscurrido = 0;
         }
-        txt_tiempo.text = "TIEMPO: " + (GameManager.tiempoTranscurrido).ToString("F2");
+        txt_tiempo.text = "TIEMPO: " + (GameMGR.tiempoTranscurrido).ToString("F2");
     }
 
     public void UpdateScore(int puntos)

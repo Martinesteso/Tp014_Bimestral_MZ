@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     UIMANAGER uiManagerScript;
-    public static float tiempoTranscurrido = 60f;
+    public float tiempoTranscurrido = 60f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            tiempoTranscurrido = 0;
         }
     }
 }
