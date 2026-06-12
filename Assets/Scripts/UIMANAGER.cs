@@ -28,7 +28,7 @@ public class UIMANAGER : MonoBehaviour
 
     public void UpdateScore(int puntos)
     {
-        txt_puntaje.text = "Puntaje: " + puntos;
+        txt_puntaje.text = "PUNTAJE: " + puntos;
     }
 
     public void MostrarPanelWin()
