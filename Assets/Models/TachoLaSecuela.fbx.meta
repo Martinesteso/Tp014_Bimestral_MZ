@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5fe2873ba894dce4ebeef138de2680e7
+guid: 1cb5041d05282e74db7b0a9b43c2a4bd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -11,7 +11,7 @@ ModelImporter:
     2100006: Material.003
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.005
+    4300000: tacho
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
