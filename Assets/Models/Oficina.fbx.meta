@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 28bfc9afed919f44fba6c27b50350dae
+guid: 513e92ddfa387b047b1c0fc30b91c1f8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Marcos
+    100000: Marcos
+    100002: //RootNode
     100004: Pared
     100006: Piso
     100008: Techo
     100010: Ventana
-    400000: //RootNode
-    400002: Marcos
+    400000: Marcos
+    400002: //RootNode
     400004: Pared
     400006: Piso
     400008: Techo
     400010: Ventana
-    2100000: Material.005
-    2100002: Material.004
-    2100004: Material.006
-    2100006: Material.007
-    2100008: Material.003
+    2100000: Material.006
+    2100002: Material.005
+    2100004: Material.004
+    2100006: Material.003
+    2100008: Material.007
     2300000: Marcos
     2300002: Pared
     2300004: Piso
@@ -30,12 +30,57 @@ ModelImporter:
     3300004: Piso
     3300006: Techo
     3300008: Ventana
-    4300000: Pared
-    4300002: Piso
-    4300004: Marcos
-    4300006: Ventana
-    4300008: Techo
-  externalObjects: {}
+    4300000: Marcos
+    4300002: Pared
+    4300004: Piso
+    4300006: Techo
+    4300008: Ventana
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: ebb74f142c89de84e8faa21fcb0ee62e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: b4910503aa7f7f540b2a058c3395a9f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 6e5d9708154e414469c933cc13a48baa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: a022d8fa72bbfd64eb2b846c7240316e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: c8169b9da83cb9e48a87dfbf33c64154, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 182235030-white-false-cassette-plasterboard-ceiling-seamless-pattern-armstrong-suspended-ceiling-for-office
+    second: {fileID: 2800000, guid: d1636a2e092ddab469ba806cc1096f51, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hierrotxt
+    second: {fileID: 2800000, guid: 755df80b8a64016489ea9f94c8bad53b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: paredRealTxt
+    second: {fileID: 2800000, guid: 8d045664efb0f504392e1445e619ab67, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pisotxt
+    second: {fileID: 2800000, guid: 686bafa7fa7672547827a628922943c4, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -75,7 +120,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
